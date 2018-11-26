@@ -1,242 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<link type="text/css" rel="stylesheet" href="style.css" />
-		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CPT+Serif:400,700,400italic'rel='stylesheet'>
-		<meta name="Description" content="UNIVERSITAS JEMBER"/>
+        <link rel="stylesheet" type="text/css" href="">
+		<link type="text/css" rel="stylesheet" href="style.css" >
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CPT+Serif:400,700,400italic'rel='stylesheet'">
+		<meta name="Description" content="UNIVERSITAS JEMBER">
 		<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
-		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="keywords" content="">
-		<meta name="description" content="">
-
-		
-		<!-- font-awesome -->
-		<link rel="stylesheet" href="css/font-awesome.min.css">
-		<!-- google font -->
-		<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700,800' rel='stylesheet' type='text/css'>
-		<!-- custom -->
-		<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+<script src="menu.js"></script>
 <title>UNIVERSITAS JEMBER</title>
-<style>
-*{
-    margin:0px;
-	padding:0px;
-}
-.bgimage{
-      background-image: url("berandautama.png");
-	  background-size: 100% 110%;
-	  width: 100%;
-	  height: 100%;
-}
-.menu{
-      width: 100%;
-	  height: 100px;
-	  background-color:darkblue;
-	   opacity: .9;
-}
-#logo{
-  float: left;
-  height: 100px;
-  width: 100px;
-  margin: 10px;
-  margin-left: 100px;
-}
-.leftmenu{
-      width: 22%;
-	  line-height: 100px;
-	  float:left;
-}
-.leftmenu h4{
-      padding-left: 5px;
-	  font-weight: bold;
-	  font-size: 23px;
-	  color: white;
-	  font-family:'Open sans',sans-serif;
-}
-.rightmenu{
-      width: 30%;
-	  height: 100px;
-	  float: right;
-}
-.rightmenu ul li {
-     font-family:'Montserrat',sans-serif;
-	   display: inline-block;
-	   list-style: none;
-	   font-size: 15px;
-	   color: white;
-	   font-weight :bold;
-	   line-height: 120px;
-	   margin-left: 10px;
-	   text-transform: uppercase;
-}
-#firstlist{
-      color: yellow;
-}
-.rightmenu ul li:hover{
-      color:yellow;
-}
-.text{
-    width: 100%;
-	  margin-top: 300px;
-		text-transform: uppercase;
-		text-align: center;
-		color: white;
-}
-.text h4{
-	  font-size: 20px;
-		 font-family:'Open sans',sans-serif;
-}
-.text h1{
-	   font-size:62px;
-		 	font-family:'Montserrat',sans-serif;
-			 font-weight:700px;
-			 margin:14px 0px;
-}
-#buttonone {
-	 background-color: darkblue;
-	 border: none;
-	 color: white;
-	 font-size: 12px;
-	 font-weight: bold;
-	 text-transform: uppercase;
-	 line-height: 40px;
-	 width: 150px;
-	 font-family:'Montserrat',sans-serif;
-   margin-top:25px;
-	 border: 3px solid darkblue;
-}
-#map
-  {
-    border: none;
-    width: 100%;
-    height: 320px;
-  }
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: darkblue;
-  color: white;
-  font-family: arial;
-  text-align: center;
-}
-/* start contact */
-#contact
-    {
-        background-image:url("contact-bg.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-		border: nine;
-		width :100%;
-		height: 400px;
-		color:red;
-    }
-#contact h3
-    {
-        font-weight: bold;
-        padding-bottom: 20px;
-    }
-#contact .fa
-    {
-        color: #93ca3a;
-        font-size: 18px;
-        padding-bottom: 14px;
-    }
-#contact .form-control
-    {
-        background: #f2f2f2;
-        border-radius: 4px;
-        box-shadow: none;
-        margin-bottom: 20px;
-        transition: all 0.4s ease-in-out;
-    }
-#contact input
-    {
-        height: 50px;
-    }
-#contact input[type="submit"]
-    {
-        color: #202020;
-        font-weight: bold;
-        margin-bottom: 80px;
-    }
-#contact input[type="submit"]:hover
-    {
-        background: #93ca3a;
-    }
- #contact .form-control::-moz-placeholder {
-  color: #666;
-  opacity: 1;
-}
-#contact .form-control:-ms-input-placeholder {
-  color: #666;
-}
-#contact .form-control::-webkit-input-placeholder {
-  color: #666;
-}
-
-</style>
 </head>
  <body>
-		<div class="bgimage">
-		   <div class="menu">
-		    <div id="logo">
+  <div class="row" style="background: darkblue;margin-top: -1%; margin-left: -1%; margin-right: -1%;">
+        <div class="col-2 " style="padding: 2% 2% 2% 2%;">
+            <img src="logounej.png" class="logo">
+        </div>
+        <div class="col-8 " style="padding-top: 2%; padding-bottom: 2%;">
+            <span class="headtext">UNIVERSITAS JEMBER</span>
+        </div>
+      <div class="col-8">
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">HOME</a>
+				 <a href="tentang.html">TENTANG</a>
+				 <a href="pendidikan.html">PENDIDIKAN</a>
+				 <a href="struktur.html">STRUKTUR </a>
+				<a href="UC3-JS.html">UC3 </a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+          </div>
+<!--		<div class="row">
+		<div class="col-2" style="background-color:darkblue;">
+		<div id="logo">
              <img height = "60" width = "60"src = "logounej.png">
 	        </div>
+		    <div class="col-3"
 			<div class="leftmenu">
 			     <h4> UNIVERSITAS JEMBER </h4>
 			</div>
-			<div class="rightmenu">
-			     <ul>
-				     <li id="firstlist"> HOME </li>
-					 <a href="tentang.html"><li> TENTANG</li></a>
-					 <a href="pendidikan.html"><li> PENDIDIKAN</li></a>
-					 <li> STRUKTUR </li>
-					 <a href="uc3.html"> <li> UC3 </li></a>
-				  </ul>
 			</div>
-		  </div>
+			<div class="col-6" style="margin-left:8.33%">
+			<div class="topnav" id="myTopNav>
+			     <a href="index.html">HOME</a>
+				 <a href="tentang.html">TENTANG</a>
+				 <a href="pendidikan.html">PENDIDIKAN</a>
+				 <a href="struktur.html">STRUKTUR </a>
+				<a href="UC3-JS.html">UC3 </a>
+				   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+			</div>
+-->			
+		</div>
+      <div class="row">
+          <div class="col-12" style="background-image: url(unej-dw-1110x450.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;">
 		  <div class="text">
-		    <h4> A step head to an </h4>
-			<h1> Outstanding University</h1>
-			<button id="buttonone"> SEE ABOUT US </button>
+					<h4> A step head to an </h4>
+					<h1> Outstanding University</h1>
+              <button color= "red" id="buttonone"><a href="tentang.html"> SEE ABOUT US </a></button>
 		</div>
-		<br><br>
-		</div>
+          </div>
+      </div>
+
+		<br><br/>
+
+
+		<!-- start about -->
+   <div id="tentang" class="wadah">
+        <div class="row">
+            <div>
+                <h1 class="judul"style="margin-left:100">TENTANG UNEJ</h1>
+                 <hr style="margin-right:50;width: 50%; height: 3px; background: blue;" ><br>
+            </div>
+            <div class="col-8">
+                <p class="text-home"> <img class="gambar" src="monumenunej.jpg" width="300px" alt="" align="right" border="0">Cikal bakal Universitas Jember berasal dari gagasan dr. R. Achmad bersama-sama
+                    dengan R. Th.
+                    Soengedi dan R. M.
+                     Soerachman
+                    yang bercita-cita mendirikan perguruan tinggi di Jember. Untuk mewujudkan cita-cita tersebut pada
+                    tanggal 1 April 1957, ketiganya membentuk panitia yang diberi nama Panitia Triumviraat dengan
+                    komposisi Ketua dr. R. Achmad; Penulis R. Th. Soengedi, dan Bendahara R. M. Soerachman.
+                    Selanjutnya Panitia Triumviraat ini pada tanggal 5 Oktober 1957 membentuk yayasan dengan nama
+                    Yayasan Universitas Tawang Alun (disahkan...</p><br><br>
+                <a href="tentang.html" class="tombol">Selengkapnya...</a>
+            </div>
+            
+        </div>
+    </div>
+<br><br/>
+     
+<div id="box2"width="100%" >   
+ <div id="strukturunej" class="bg-content">
+        <div class="wadah">
+            <div class="row">
+			   <div class="col-4">
+                <h1 class="judul"style="margin-left:500">STRUKTUR ORGANISASI</h1>
+                <hr style="margin-right:50;width: 50%; height: 3px; background: blue;">
+				<div class="konten">
+                    <div class="col-3">
+                        <img src="1.jpg" class="gambar">
+                        <p><b>Drs. Moh. Hasan,M.Sc, Ph.D</b></p>
+                        <button class="kedudukan"><b>Rektor</b></button>
+                    </div>
+                    <div class="col-3">
+                        <img src="2.jpg" class="gambar">
+                        <p><b>Drs. Zulfikar, Ph.D</b></p>
+                        <button class="kedudukan"><b>Wakil Rektor I</b></button>
+                    </div>
+                    <div class="col-3">
+                        <img src="3.jpg" class="gambar">
+                        <p><b>Drs. Wachju Subchan,M.S., Ph.D</b></p>
+                        <button class="kedudukan"><b>Wakil Rektor II</b></button>
+                    </div>
+                    <div class="col-3">
+                        <img src="4.jpg" class="gambar"><br>
+                        <p><b>Prof. Dr. M. Sulton, M.Pd</b></p>
+                        <button class="kedudukan"><b>Wakil Rektor III</b></button>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div><br></div> 
+<!-- end about -->
 			<div id="map">
-				 <a href="pendidikan.html"><img width = "100%" src = "peta-unej.png"></a>
+			<p><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15797.517788458073!2d113.7160743!3d-8.1644718!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xec33c34804a10832!2sUniversitas+Jember!5e0!3m2!1sid!2sid!4v1542968130166" width="1500" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></p>
 			</div>
-			<br><br><br><br><br>
+			<br><br><br><br><br><br>
 
-<div id="contact">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-3 col-sm-4 wow fadeInLeft" data-wow-delay="0.6s">
-						<h2><strong>UNEJ</strong> Campus</h2>
-						<p>We Love Unej</p>
-						<ul class="social-icon">
-							<li><a href="#" class="fa fa-facebook"></a></li>
-							<li><a href="#" class="fa fa-twitter"></a></li>
-							<li><a href="#" class="fa fa-instagram"></a></li>
-						</ul>
-					</div>
-					<div class="col-md-3 col-sm-4 wow fadeIn" data-wow-delay="0.9s">
-						<address>
-							<h3>Visit Us</h3>
-							<p><i class="fa fa-map-marker too-icon"></i>Jalan. Kalimantan No. 37, Kampus Tegalboto, Jember, Jawa Timur, 68121, Indonesia</p>
-							<p><i class="fa fa-phone too-icon"></i> (0331) 330-224 | (0331) 334-270</p>
-							<p><i class="fa fa-envelope-o too-icon"></i>humas@unej.ac.id</p>
-						</address>
-					</div>
-					
+<div id="contact" width="100%" >
+			   <div class="footer-left" style="float: left; padding: 70px; text-align: center;font-size:24px;">
+			   <p class="footer-company-about">
+					<span><b>UNEJ.CAMPUS</b></span><br><br>
+					<b>WE LOVE UNEJ</b>
+				</p><br>
+
+				<div class="footer-icons">
+
+					<a href="https://web.facebook.com/unejofficial/?_rdc=1&_rdr"><i class="fa fa-facebook"></i></a>
+					<a href="https://twitter.com/official_unej"><i class="fa fa-twitter"></i></a>
+					<a href="https://www.instagram.com/kampusunej/"><i class="fa fa-instagram"></i></a>
+					<a href="https://www.youtube.com/channel/UCjn_I-pBcV4PFKOasvtCgOQ"><i class="fa fa-youtube"></i></a>
+
+			   </div>
+			
+			</div>
+			<div class ="footer-right" width="10%" style="float: right; display: inline-block;width: 50%; margin-top: 50px;">
+			
+			<p class="footer-adreess-to">
+			   <div>
+					<i class="fa fa-map-marker"></i>
+					<span>Jalan. Kalimantan No. 37, Kampus Tegalboto</span> Jember, Jawa Timur, 68121, Indonesia</span>
 				</div>
+                 <br>
+				<div>
+					<i class="fa fa-phone"></i>
+					<span>(0331) 330-224 | (0331) 334-270</span>
+				</div>
+                 <br>
+				<div>
+					<i class="fa fa-envelope"></i>
+					<span><a href="humas@unej.ac.id">humas@unej.ac.id</a></span>
+				</div>
+			
 			</div>
 		</div>
 
-		<div class = "footer">
+		<div class = "end">
       <p> Copyright© 2018 Universitas Jember. All right reserved.</p>
     </div>
 </body>

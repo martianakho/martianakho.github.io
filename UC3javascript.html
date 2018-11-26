@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>UC3-Universitas Jember</title>
+<title>Background Fullscreen dengan CSS</title>
+<link href='style.css' rel=stylesheet'>
+<script type="tabel.js"></script>
+<style>
+body {
+background: url(university-background-04.jpg) no-repeat fixed;
+   -webkit-background-size: 100% 100%;
+   -moz-background-size: 100% 100%;
+   -o-background-size: 100% 100%;
+   background-size: 100% 100%;
+
+}
+#wrapper {
+  margin: auto;
+  width: 1300px;
+}
+
+#header {
+  height: 120px;
+  background-color: darkblue;
+  opacity: .8;
+}
+
+#logo{
+  float: left;
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  margin-left: 50px;
+}
+
+#title{
+  float: left;
+  width : 400px;
+  color : white;
+  font-size : 30px;
+  font-weight : bold;
+  margin: 40px;
+  margin-left: 40px;
+}
+ul{
+   margin: 0px;
+   padding:0px;
+   list-style: none;
+   font-family: Arial;
+   color: white;
+}
+ul li {
+     float: left;
+	 width: 216px;
+	 height: 40px;
+	 background-color: gray;
+	 opacity: .8;
+	 line-height: 40px;
+	 text-align:center;
+	 font-size: 20px;
+
+}
+ul li a{
+      text-decoration: none;
+	  color: white;
+	  display: block;
+}
+ul li a:hover {
+      background-color: blue;
+}
+ul li ul li {
+      display: none;
+}
+ul li:hover ul li {
+      display: block;
+}
+#firstlist{
+  color:yellow;
+
+}
+
+
+   </style>
+</head>
+<body>
+    <div id="wrapper">
+      <div id="header">
+        <div id="logo">
+       <img height = "80" width = "80"src = "logounej.png">
+      </div>
+          <div id="title">
+            UC3-Universitas JEMBER
+       </div>
+     </div>
+	<ul>
+      <li><a href="index.html">BERANDA</a></li>
+	     <li><a href="tentang.html">TENTANG</a></li>
+	     <li><a href="pendidikan.html">AKADEMIK</a></li>
+	     <li><a href="struktur.html">STRUKTUR</a></li>
+	     <li id="firstlist"><a>UC3</a></li>
+		 <li><a href="index.html">CONTACT</a></li>
+	 </ul>
+</body>
+
+<body>
+<table border="0" bgcolor ="FFFFFF" align="center" height="800" width="800" cellpadding="20">
+<tr>
+<td>
+  <form name= 'biodata' method='post'>
+<form id="from1"> 
+  <b><font color="black" size="10"> UC3 - BUKA ADUAN BARU</font></b>>
+<p>Silahkan isi formulir berikut ini untuk membuka sebuah aduan baru. <b><font color="red"> Pastikan data diri anda di bawah ini adalah benar.</font></b></p>
+
+<p> Data Informasi Pengguna </p>
+<p><b> Nama Lengkap* </b></p>
+<pre>
+Nama Depan : <input type="text" Name="nama">
+Nama Belakang : <input type="text" Name="nama"><br><br>
+<p><b> No Telephone :</b></p>
+<input type="text" Name="number"><br><br>
+<p><b> Alamat Email*:</b></p>
+<input type="text" Name="email"><br><br>
+<p><b> Password* </b></p>
+<input type="password" Name="sandi"><br>
+<p><b> Topik Bantuan </b></p>
+<select name="Pilih Topik Bantuan">
+<option value="" selected="selected">&mdash; Pilih Topik Bantuan &mdash;</option>
+<option value="Akademik" >Akademik</option><option value="Struktur" >Struktur</option><option value="UC3" >UC3</option><option value="Jaringan" >Jaringan (Wifi, Email)</option><option value="LAINNYA" >LAINNYA</option>
+<table>
+<tr>
+                  <td colspan="1">&nbsp;</td>
+              </tr>
+<p><b>Komentar</b></p>
+<input type="text" Name="text" size="100" placeholder="Komentar"><br><br>
+ <tr id="txFak">
+            <td colspan="2"><hr />
+                <div class="form-header" style="margin-bottom:0em">
+                    <b>Asal Fakultas / Unit Kerja</b>
+                </div>
+            </td>
+        </tr>
+        <tr id="selFak">
+            <td colspan="2">
+
+<select id="kdfakultas" name="kdfakultas">
+<option value="" selected="selected">--- Pilih Fakultas / Unit Kerja --- </option>
+<option value="" selected="selected">Pilih Fakultas/Unit Kerja </option>
+<optgroup label="Fakultas"><option value="Fakultas">Fakultas Ilmu Budaya</option><option value="Fakultas Ilmu Budaya">Fakultas Keguruan dan Ilmu Pendidikan</option><option value="Fakultas Keguruan dan Ilmu Pendidikan">Fakultas Hukum</option><option value="Fakultas Hukum">Fakultas Ekonomi dan Bisnis</option><option value="Fakultas Ekonomi dan Bisnis<">Fakultas Ilmu Sosial dan Ilmu Politik</option><option value="Fakultas Ilmu Sosial dan Ilmu Politik">Fakultas Pertanian</option><option value="Fakultas Pertanian">Fakultas Kedokteran Gigi</option><option value="Fakultas Kedokteran Gigi">Fakultas Teknologi Pertanian</option><option value="Fakultas Teknologi Pertanian">Fakultas Matematika dan Ilmu Pengetahuan Alam</option><option value="Fakultas Matematika dan Ilmu Pengetahuan Alam">Fakultas Teknik</option><option value="Fakultas Teknik">Fakultas Kedokteran</option><option value="Fakultas Kedokteran">Fakultas Kesehatan Masyarakat</option><option value="Fakultas Kesehatan Masyarakat">Fakultas Farmasi</option><option value="Fakultas Farmasi">Fakultas Keperawatan</option><option value="Fakultas Keperawatan">Fakultas Ilmu Komputer</option><option value="Fakultas Ilmu Komputer">Pascasarjana</option><option value="Pascasarjana">MKU</option></optgroup><optgroup label="Unit Kerja"><option value="Unit Kerja">Kantor Pusat</option><option value="Kantor Pusat">Lembaga</option><option value="Unit Pelayanan Teknis (UPT)">Unit Pelayanan Teknis (UPT)</option></optgroup>
+</select><br><br>
+<tr id="txFak">
+            <td colspan="2"><hr />
+                <div class="form-header" style="margin-bottom:0em">
+                    <b>Asal Program Studi / Sub Unit Kerja </b>
+                </div>
+            </td>
+        </tr>
+        <tr id="selProdi">
+            <td colspan="2">
+
+ <select id="kdprodi" name="kdprodi">
+ <option value="" selected="selected">--- Pilih Program Studi --- </option>
+                </select>
+     </pre>
+
+
+				<p class="buttons" style="text-align:right;">
+
+        <input type="button" onClick='terima input()' value="Kirim Aduan">
+        <input type="reset" value="Batal">
+  </p>
+</td>
+</tr>
+</form>
+</form>
+<table border="1" id='tabelinput'>
+  <tr>
+    <td>NamaDepan</td>
+    <td>Nama Belakang</td>
+    <td>No Telephone</td>
+    <td>Alamat Email</td>
+    <td>Password</td>
+    <td>TOPIK BANTUAN</td>
+    <td>KOMENTAR</td>
+    <td>ASAL FAKULTAS/UNIT KERJA</td>
+    <td>Pilih Program Studi</td>
+  </tr>
+</table>
+
+</body>
+</html>

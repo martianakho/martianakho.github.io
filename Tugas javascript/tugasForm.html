@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UC3-UNIVERITAS JEMBER</title>
+	<body bgcolor="white">
+	<script src="formjs.js"></script>
+</head>
+<style type="text/css">
+	input [type="button"]:hover
+	{
+		background-color: green;
+	}
+</style>
+<body>
+<font face= "monotype corsiva" style="margin-left: 36%; color: black; margin-bottom: 8%;" size="10"><b>UC3-UNIVERSITAS JEMBER</b></font>
+<form style="margin: 0 5%; font-size: 20px; color: black" name="form1" method="post" action="tutor.html">
+
+<img src="logounej.png" class="logo">
+<pre>
+	<font face="Kristen ITC">
+	<h3>Data Informasi Pengguna </h3></font>
+	<font face="Time News Roman">
+	Nama Lengkap 	             : <input type="text" name="nama" id="nama">
+	No. Telephone 	             : <input type="number" name="telepon" id="telepon">
+	Alamat Email 	             : <input type="email" name="email" id="email">
+ 	Topik Bantuan 	             : <select name="pilihtopikbantuan" id="pilihtopikbantuan">
+ 					             <option>Akademik</option>
+ 					             <option>Struktur</option>
+ 					             <option>UC3</option>
+ 					             <option>Jaringan</option>
+ 					             <option>LAINNYA</option>
+ 					             </select>
+ 	Komentar                                : <input type="text" name="komentar" id="komentar">
+                 Pilih Fakultas/Unit Kerja         : <select name="pilihfakutasunitkerja" id="pilihfakultasunitkerja">
+ 				 					<option value="Fakultas">Fakultas Ilmu Budaya</option>
+ 				 					<option value="Fakultas Ilmu Budaya">Fakultas Keguruan dan Ilmu Pendidikan</option>
+ 				 					<option value="Fakultas Keguruan dan Ilmu Pendidikan">Fakultas Hukum</option>
+ 				 					<option value="Fakultas Hukum">Fakultas Ekonomi dan Bisnis</option>
+ 				 					<option value="Fakultas Ekonomi dan Bisnis">Fakultas Ilmu Sosial dan Ilmu Politik</option>
+ 				 					<option value="Fakultas Ilmu Sosial dan Ilmu Politik">Fakultas Pertanian</option>
+ 				 					<option value="Fakultas Pertanian">Fakultas Kedokteran Gigi</option>
+ 				 					<option value="Fakultas Kedokteran Gigi">Fakultas Teknologi Pertanian</option>
+ 				 					<option value="Fakultas Teknologi Pertanian">Fakultas Matematika dan Ilmu Pengetahuan Alam</option>
+ 				 					<option value="Fakultas Matematika dan Ilmu Pengetahuan Alam">Fakultas Teknik</option>
+ 				 					<option value="Fakultas Teknik">Fakultas Kedokteran</option>
+ 				 					<option value="Fakultas Kedokteran">Fakultas Kesehatan Masyarakat</option>
+ 				 					<option value="Fakultas Kesehatan Masyarakat">Fakultas Farmasi</option>
+ 				 					<option value="Fakultas Farmasi">Fakultas Keperawatan</option>
+ 				 					<option value="Fakultas Keperawatan">Fakultas Ilmu Komputer</option>
+ 				 					<option value="Fakultas Ilmu Komputer">Pascasarjana</option>
+ 				 					<option value="Pascasarjana">MKU</option>
+ 				 					<optgroup label="Unit Kerja"><option value="Unit Kerja">Kantor Pusat</option>
+ 				 				    <option value="Kantor Pusat">Lembaga</option>
+ 				 				    <option value="Unit Pelayanan Teknis (UPT)">Unit Pelayanan Teknis (UPT)</option>
+					               </optgroup>
+					               </select>
+	Program Studi/Sub Unit Kerja: <input type="text" id="deskripsi" name="deskripsi">
+</pre>
+	<input style="margin-left: 20%; margin-top: 20px;" type ="button" onclick="terimainput1()" value="Submit">
+	<input type ="reset" value="Reset">
+</form>
+
+	<table style="margin-top: 50px;margin-left: 0px; color: black;" border="3px white" id="tabelinputan1">
+		<tr>
+			<td>Nama Lengkap</td>
+			<td>No Telephone</td>
+			<td>Alamat Email</td>
+			<td>Topik Bantuan</td>
+			<td>Komentar</td>
+			<td>Pilih Fakultas/Unit Kerja</td>
+ 			<td>Program Studi/Sub Unit Kerja</td>
+ 			
+ 		</tr>
+ 	</table>
+</font>
+
+</body>
+</html>
+
+<style>
+	.foto {
+		position: absolute;
+		opacity: 0.25;
+		margin-left: -480px;
+		margin-top: -370px;
+		width: 27%;
+		height: 55%; 
+	}
+
+	.logo{
+		position: absolute;
+		width:5%;
+		margin-top: -70px;
+
+	}
+
+hr{
+    margin-left: 0px;
+    width: 1300px;
+    margin-top: 30px;
+    border-color: #ff3333;
+    border-width: 2;
+}
+</style>
